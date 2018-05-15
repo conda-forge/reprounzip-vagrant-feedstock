@@ -1,6 +1,6 @@
 {% set name = "reprounzip-vagrant" %}
-{% set version = "1.0.10" %}
-{% set sha256 = "e36e2c0866b6c8e6e1309ad550307d711e2fcb21bdb6f79d3c6cef4cf4790d0b" %}
+{% set version = "1.0.13" %}
+{% set sha256 = "72573a03faef73e30b92a1bcf93a6cbf3dc0162ea93b40414c76e468faef91e5" %}
 
 package:
   name: {{ name|lower }}
