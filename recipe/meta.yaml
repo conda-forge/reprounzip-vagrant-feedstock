@@ -1,6 +1,6 @@
 {% set name = "reprounzip-vagrant" %}
-{% set version = "1.0.13" %}
-{% set sha256 = "72573a03faef73e30b92a1bcf93a6cbf3dc0162ea93b40414c76e468faef91e5" %}
+{% set version = "1.1" %}
+{% set sha256 = "c2554ae81750e0f90bbc68edc6857da008c3a664f06f00e5442bbf1fa9049e39" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - python
-    - reprounzip >=1.0.10
+    - reprounzip >=1.1
     - rpaths >=0.8
     - paramiko
 
@@ -35,7 +35,7 @@ test:
     - reprounzip vagrant --help
 
 about:
-  home: http://github.com/ViDA-NYU/reprozip
+  home: http://github.com/VIDA-NYU/reprozip
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
@@ -49,7 +49,7 @@ about:
     (packing step). A reviewer can then extract the experiment in his
     environment to reproduce the results (unpacking step).
   doc_url: https://docs.reprozip.org/
-  dev_url: https://github.com/ViDA-NYU/reprozip
+  dev_url: https://github.com/VIDA-NYU/reprozip
 
 extra:
   recipe-maintainers:
