@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -39,7 +39,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Linux tool enabling reproducible experiments (vagrant plugin)'
+  summary: Linux tool enabling reproducible experiments (vagrant plugin)
   description: |
     ReproZip is a tool aimed at simplifying the process of creating reproducible
     experiments from command-line executions, a frequently-used common
